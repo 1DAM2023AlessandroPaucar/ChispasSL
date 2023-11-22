@@ -1,4 +1,6 @@
-public class SalesLine {
+import java.util.ArrayList;
+
+public class SalesLine extends ArrayList<SalesLine> {
     private String code;
     private String name;
 

@@ -1,4 +1,4 @@
-public class Freelancer {
+public class Freelancer extends Customer {
     private String surname;
     private Invoice invoice;
 

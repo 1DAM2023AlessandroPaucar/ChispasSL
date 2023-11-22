@@ -5,10 +5,8 @@ public class Invoice {
     private String date;
     private String taxBase;
     private String total;
-
     private Freelancer freelancer;
     private Company company;
-
     private ArrayList<SalesLine>salesLines;
 
     public String getCode() {

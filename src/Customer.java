@@ -7,16 +7,6 @@ public class Customer {
     private String email;
     private String phone;
 
-    public Customer(String code, String name, String adress, String population, String province, String email, String phone) {
-        this.code = code;
-        this.name = name;
-        this.adress = adress;
-        this.population = population;
-        this.province = province;
-        this.email = email;
-        this.phone = phone;
-    }
-
     public String getCode() {
         return code;
     }

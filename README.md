@@ -114,4 +114,4 @@ Crearemos una clase llamada InvoicePrinter (Impresora de Factura) que emule la h
 cliente que tenía para imprimir las facturas. Esta clase sirve para imprimir facturas. La
 estructura será la siguiente:
 
-![image](https://github.com/paucare/ElectricidadChispas/assets/146753377/8d515f90-6f08-4bcd-ae10-310bc1cb6887)
+![image](https://github.com/paucare/ChispasSL/assets/146753377/670fcb4a-2ce8-4b0e-809d-2273cee3ec3b)

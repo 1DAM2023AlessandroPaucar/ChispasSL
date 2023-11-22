@@ -195,7 +195,7 @@ public class Main {
 
         Invoice factura2 = new Invoice();
 
-        System.out.println("Introduce los datos de la primera factura");
+        System.out.println("Introduce los datos de la segunda factura");
 
         System.out.println("Introduce el codigo de la factura:");
         factura2.setCode(read.nextLine());
@@ -214,7 +214,7 @@ public class Main {
         factura1.setSalesLines(producto2);
         factura1.setSalesLines(servicio2);
 
-        System.out.println("Se han guardado los datos de la factura 1");
+        System.out.println("Se han guardado los datos de la factura 2");
 
     }
 }

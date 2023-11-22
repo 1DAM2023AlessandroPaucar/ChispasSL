@@ -6,6 +6,7 @@ public class Customer {
     private String province;
     private String email;
     private String phone;
+    private Customer customer;
 
     public String getCode() {
         return code;
@@ -61,5 +62,13 @@ public class Customer {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

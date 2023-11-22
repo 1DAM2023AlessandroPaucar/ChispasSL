@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class SalesLine extends ArrayList<SalesLine> {
     private String code;
     private String name;
-
     private String brand;
     private String model;
     private String price;

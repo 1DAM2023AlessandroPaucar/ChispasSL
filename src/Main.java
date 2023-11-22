@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
     Scanner read = new Scanner(System.in);
 
-        //Inicializar el array
+        //Inicializar el arraylist
 
         ArrayList<SalesLine> Saleslines = new ArrayList<>();
 
@@ -156,7 +156,7 @@ public class Main {
         System.out.println("Introduce el precio");
         precio = read.nextLine();
 
-        System.out.println("Introduce el iva:");
+        System.out.println("Introduce el tipo de IVA:");
         iva = read.nextLine();
 
         SalesLine servicio2 = new SalesLine(codigo,nombre,precio,iva);
@@ -184,8 +184,7 @@ public class Main {
         System.out.println("Introduce el total:");
         factura1.setTotal(read.nextLine());
 
-        factura1.setFreelancer(autonomo1);
-
+        factura1.setCustomer(autonomo1);
         factura1.setSalesLines(producto1);
         factura1.setSalesLines(servicio1);
 
@@ -209,12 +208,19 @@ public class Main {
         System.out.println("Introduce el total:");
         factura2.setTotal(read.nextLine());
 
-        factura2.setCompany(sociedad1);
-
-        factura1.setSalesLines(producto2);
-        factura1.setSalesLines(servicio2);
+        factura2.setCustomer(sociedad1);
+        factura2.setSalesLines(producto2);
+        factura2.setSalesLines(servicio2);
 
         System.out.println("Se han guardado los datos de la factura 2");
+
+        InvoicePrinter impresora = new InvoicePrinter();
+
+        impresora.print(factura1);
+
+        System.out.println("");
+
+        impresora.print(factura2);
 
     }
 }

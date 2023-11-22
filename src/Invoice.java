@@ -3,10 +3,9 @@ import java.util.ArrayList;
 public class Invoice {
     private String code;
     private String date;
-    private String taxBase;
-    private String total;
-    private Freelancer freelancer;
-    private Company company;
+    private String taxBase; // Base imponible: total de productos y servicios sin IVA
+    private String total; //
+    private Customer customer;
     private ArrayList<SalesLine>salesLines;
 
     public String getCode() {
@@ -41,20 +40,12 @@ public class Invoice {
         this.total = total;
     }
 
-    public Freelancer getFreelancer() {
-        return freelancer;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setFreelancer(Freelancer freelancer) {
-        this.freelancer = freelancer;
-    }
-
-    public Company getCompany() {
-        return company;
-    }
-
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
     public ArrayList<SalesLine> getSalesLines() {

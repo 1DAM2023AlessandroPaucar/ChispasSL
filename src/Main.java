@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println("Introduce los datos de un autónomo");
 
-        System.out.println("Introduce el codigo:");
+        System.out.println("Introduce el dni:");
         String code = read.nextLine();
         autonomo1.setCode(code);
 
@@ -45,7 +45,7 @@ public class Main {
 
         System.out.println("Introduce los datos de una sociedad");
 
-        System.out.println("Introduce el codigo:");
+        System.out.println("Introduce el cif:");
         sociedad1.setCode(read.nextLine());
 
         System.out.println("Introduce la Razón Social:");

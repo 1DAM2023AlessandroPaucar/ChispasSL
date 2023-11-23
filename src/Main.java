@@ -7,7 +7,8 @@ public class Main {
 
         //Inicializar el arraylist
 
-        ArrayList<SalesLine> saleslines = new ArrayList<>();
+        ArrayList<SalesLine> productos = new ArrayList<>();
+        ArrayList<SalesLine> servicios = new ArrayList<>();
 
         //Autonomo 1
 
@@ -48,7 +49,7 @@ public class Main {
         System.out.println("Introduce el codigo:");
         sociedad1.setCode(read.nextLine());
 
-        System.out.println("Introduce el CIF:");
+        System.out.println("Introduce la Razón Social:");
         sociedad1.setName(read.nextLine());
 
         System.out.println("Introduce la dirección");
@@ -91,7 +92,7 @@ public class Main {
         String iva = read.nextLine();
 
         SalesLine producto1 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
-        saleslines.add(producto1);
+        productos.add(producto1);
 
         System.out.println("Se han guardado los datos deL producto 1");
 
@@ -118,7 +119,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine producto2 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
-        saleslines.add(producto2);
+        productos.add(producto2);
 
         System.out.println("Se han guardado los datos deL producto 2");
 
@@ -139,7 +140,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine servicio1 = new SalesLine(codigo, nombre, precio, iva);
-        saleslines.add(servicio1);
+        servicios.add(servicio1);
 
         System.out.println("Se han guardado los datos deL servicio 1");
 
@@ -160,7 +161,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine servicio2 = new SalesLine(codigo, nombre, precio, iva);
-        saleslines.add(servicio2);
+        servicios.add(servicio2);
 
         System.out.println("Se han guardado los datos deL servicio 2");
 
@@ -185,7 +186,7 @@ public class Main {
         factura1.setTotal(read.nextLine());
 
         factura1.setCustomer(autonomo1);
-        factura1.setSalesLines(saleslines);
+        factura1.setSalesLines(productos);
 
         System.out.println("Se han guardado los datos de la factura 1");
 
@@ -208,7 +209,7 @@ public class Main {
         factura2.setTotal(read.nextLine());
 
         factura2.setCustomer(sociedad1);
-        factura2.setSalesLines(saleslines);
+        factura2.setSalesLines(servicios);
 
         System.out.println("Se han guardado los datos de la factura 2");
 

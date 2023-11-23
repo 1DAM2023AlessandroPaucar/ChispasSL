@@ -3,20 +3,20 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-    Scanner read = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
 
         //Inicializar el arraylist
 
-        ArrayList<SalesLine> Saleslines = new ArrayList<>();
+        ArrayList<SalesLine> saleslines = new ArrayList<>();
 
         //Autonomo 1
 
-    Freelancer autonomo1 = new Freelancer();
+        Freelancer autonomo1 = new Freelancer();
 
-    System.out.println("Introduce los datos de un autónomo");
+        System.out.println("Introduce los datos de un autónomo");
 
         System.out.println("Introduce el codigo:");
-        String code= read.nextLine();
+        String code = read.nextLine();
         autonomo1.setCode(code);
 
         System.out.println("Introduce el nombre:");
@@ -41,7 +41,7 @@ public class Main {
 
         //Sociedad 1
 
-    Company sociedad1 = new Company();
+        Company sociedad1 = new Company();
 
         System.out.println("Introduce los datos de una sociedad");
 
@@ -90,8 +90,8 @@ public class Main {
         System.out.println("Introduce el iva:");
         String iva = read.nextLine();
 
-        SalesLine producto1 = new SalesLine(codigo,nombre,marca,modelo,precio,iva);
-        Saleslines.add(producto1);
+        SalesLine producto1 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
+        saleslines.add(producto1);
 
         System.out.println("Se han guardado los datos deL producto 1");
 
@@ -117,8 +117,8 @@ public class Main {
         System.out.println("Introduce el iva:");
         iva = read.nextLine();
 
-        SalesLine producto2 = new SalesLine(codigo,nombre,marca,modelo,precio,iva);
-        Saleslines.add(producto2);
+        SalesLine producto2 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
+        saleslines.add(producto2);
 
         System.out.println("Se han guardado los datos deL producto 2");
 
@@ -138,8 +138,8 @@ public class Main {
         System.out.println("Introduce el iva:");
         iva = read.nextLine();
 
-        SalesLine servicio1 = new SalesLine(codigo,nombre,precio,iva);
-        Saleslines.add(servicio1);
+        SalesLine servicio1 = new SalesLine(codigo, nombre, precio, iva);
+        saleslines.add(servicio1);
 
         System.out.println("Se han guardado los datos deL servicio 1");
 
@@ -159,8 +159,8 @@ public class Main {
         System.out.println("Introduce el tipo de IVA:");
         iva = read.nextLine();
 
-        SalesLine servicio2 = new SalesLine(codigo,nombre,precio,iva);
-        Saleslines.add(servicio2);
+        SalesLine servicio2 = new SalesLine(codigo, nombre, precio, iva);
+        saleslines.add(servicio2);
 
         System.out.println("Se han guardado los datos deL servicio 2");
 
@@ -185,8 +185,7 @@ public class Main {
         factura1.setTotal(read.nextLine());
 
         factura1.setCustomer(autonomo1);
-        factura1.setSalesLines(producto1);
-        factura1.setSalesLines(servicio1);
+        factura1.setSalesLines(saleslines);
 
         System.out.println("Se han guardado los datos de la factura 1");
 
@@ -209,8 +208,7 @@ public class Main {
         factura2.setTotal(read.nextLine());
 
         factura2.setCustomer(sociedad1);
-        factura2.setSalesLines(producto2);
-        factura2.setSalesLines(servicio2);
+        factura2.setSalesLines(saleslines);
 
         System.out.println("Se han guardado los datos de la factura 2");
 

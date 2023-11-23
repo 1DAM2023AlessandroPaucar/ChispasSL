@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class SalesLine extends ArrayList<SalesLine> {
+public class SalesLine {
     private String code;
     private String name;
     private String brand;

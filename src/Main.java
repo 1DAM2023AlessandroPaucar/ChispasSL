@@ -7,8 +7,7 @@ public class Main {
 
         //Inicializar el arraylist
 
-        ArrayList<SalesLine> productos = new ArrayList<>();
-        ArrayList<SalesLine> servicios = new ArrayList<>();
+        ArrayList<SalesLine> lineaventas = new ArrayList<>();
 
         //Autonomo 1
 
@@ -92,7 +91,7 @@ public class Main {
         String iva = read.nextLine();
 
         SalesLine producto1 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
-        productos.add(producto1);
+        lineaventas.add(producto1);
 
         System.out.println("Se han guardado los datos deL producto 1");
 
@@ -119,7 +118,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine producto2 = new SalesLine(codigo, nombre, marca, modelo, precio, iva);
-        productos.add(producto2);
+        lineaventas.add(producto2);
 
         System.out.println("Se han guardado los datos deL producto 2");
 
@@ -140,7 +139,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine servicio1 = new SalesLine(codigo, nombre, precio, iva);
-        servicios.add(servicio1);
+        lineaventas.add(servicio1);
 
         System.out.println("Se han guardado los datos deL servicio 1");
 
@@ -161,7 +160,7 @@ public class Main {
         iva = read.nextLine();
 
         SalesLine servicio2 = new SalesLine(codigo, nombre, precio, iva);
-        servicios.add(servicio2);
+        lineaventas.add(servicio2);
 
         System.out.println("Se han guardado los datos deL servicio 2");
 
@@ -186,7 +185,7 @@ public class Main {
         factura1.setTotal(read.nextLine());
 
         factura1.setCustomer(autonomo1);
-        factura1.setSalesLines(productos);
+        factura1.setSalesLines(lineaventas);
 
         System.out.println("Se han guardado los datos de la factura 1");
 
@@ -209,7 +208,7 @@ public class Main {
         factura2.setTotal(read.nextLine());
 
         factura2.setCustomer(sociedad1);
-        factura2.setSalesLines(servicios);
+        factura2.setSalesLines(lineaventas);
 
         System.out.println("Se han guardado los datos de la factura 2");
 
